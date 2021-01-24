@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+    <style>
+        body{
+            font: normal 12px arial;
+            text-align: center;
+        }
+        h1{
+            font: bold 50px arial;
+            color: brown;
+        }
+        .botao{
+            width: 150px;
+            height: 50px;
+            margin-top: 0px;
+            margin-bottom: 20px;
+            font: normal 30px arial;
+            color: white;
+            border-style: none;
+            background-color: brown;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            outline-style: none;
+        }
+        .botao:hover{
+            background-color: rgb(102, 26, 26);
+        }
+        #res{
+            font: normal 20px arial;
+        }
+        p{
+            font: normal 20px arial;
+            margin-bottom: 5px;
+        }
+        input{
+            width: 100px;
+            height: 25px;
+            font-size: 20px;
+            color: brown;
+            text-align: center;
+            border-style: solid;
+            border-color: black;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            outline-style: none;
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button{
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        .teste{
+            color:brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistemas de Multas</h1>
+    <p>Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> <strong>Km/h</strong></p> </br>
+    <input type="button" value="Verificar" onclick="calcular()" class="botao">
+    <div id="res"></div>
+    <script>
+        
+
+        function calcular(){
+            var txtv = window.document.getElementById(('txtvel').toUpperCase)   
+            var res = window.document.getElementById('res') 
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p>Sua velocidade atual é de <strong class="teste">${vel}</strong> Km/h </p>`
+            if (vel > 60){
+                res.innerHTML += `<p>Sua velocidade está acima do permitido. <strong class="teste">Multado!</p>`
+            }
+            res.innerHTML += `<p>Dirija sempre com cinto de Segurança</p>`
+        }
+    </script>
+</body>
+</html>

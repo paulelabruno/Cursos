@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt/br">
+    <head>
+        <meta charset="utf-8" />
+        <title>ex003</title>
+       <!-- <link rel="stylesheet" href="estilo.css" type="text/css"/> -->
+        <style>
+            body{
+                background-color: rgb(52, 44, 80);
+            }
+            p{
+                font-size: 30px;
+                color: rgb(116, 140, 82);
+                font-family: fantasy;
+            } 
+            h1{
+                color: rgb(103, 141, 46);
+                font-family: fantasy;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Olá, mundo!</h1>
+        <p>Já me livrei da maldição</p>
+            
+        <script>
+            var nome = window.prompt('Digite seu nome')
+            var n1 = Number(window.prompt('Digite um número'))
+            var n2 = Number(window.prompt('Digite outro número'))
+
+            var soma = n1 + n2
+            /*utilizando crase podemos escrever de forma mais "natural" 
+            mesmo com variaveis*/
+            window.alert(`A soma entre esses dois números é de ${soma}`)
+            // + para adição e concatenação
+            window.alert(nome.length)
+            window.alert(nome.toUpperCase(nome))
+            window.alert(nome.toLowerCase(nome))
+        </script>
+    </body>
+</html>
