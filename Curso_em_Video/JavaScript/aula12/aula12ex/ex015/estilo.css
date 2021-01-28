@@ -1,6 +1,6 @@
 body{
-    background: #81d8d0;
-    font: normal 15pt arial;
+    background: #81c1d8;
+    font: normal 16pt arial;
 }
 header{
     color: white;
@@ -12,7 +12,7 @@ section{
     padding: 15px;
     max-width: 500px;
     min-width: 450px;
-    height: 350px;
+    height: 550px;
     margin: auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.323);
 }
@@ -22,33 +22,41 @@ footer{
     font-style: italic;
 } 
 
+.titulo{
+    text-shadow: 3px 0 0 #0c6281, -3px 0 0 #0c6281, 0 3px 0 #0c6281, 0 -3px 0 #0c6281, 2px 2px #0c6281, -2px -2px 0 #0c6281, 2px -2px 0 #0c6281, -2px 2px 0 #0c6281;
+}
+
 div{
     text-align: center;
 }
 
 section p{
-    padding: 3.5%;
+    padding: 2.5%;
 }
 
 #botao{
     font: normal 30px arial;
-    color: #0c8176;
-    border: 3px solid #0c8176;
+    color: #0c6281;
+    border: 3px solid #0c6281;
     border-radius: 8pt;
     outline-style: none;
 }
 #botao:hover{
-    border-color: #07463f;
-    color: #07463f;
+    border-color: #094a61;
+    color: #094a61;
     background-color: rgba(112, 128, 144, 0.411);
 }
 
 .cor{
-    color: #0c8176;
+    color: #0c6281;
+}
+
+.ano{
+    font: normal 19pt arial;
 }
 
 .idd{
-    border: 3px solid #0c8176;
+    border: 3px solid #0c6281;
     font-size: 20px;
     border-radius: 7pt;
     outline-style: none;
@@ -56,4 +64,8 @@ section p{
     margin-top: 5px;
     width: 100px;
     color: #0c8176;
+}
+#imagem{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.337);
+    border-radius: 50%;
 }
