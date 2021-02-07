@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Vamos contar</h1>
+    </header>
+    <section>
+        <div>
+            <p><strong>Primeiro número</strong>
+            <input type="number" name="num1" id="num1" min="0">
+            </p>
+            
+            <p><strong>Último número</strong>
+            <input type="number" name="num2" id="num2" min="0">
+            </p>
+
+            <p><strong>Etapas</strong>
+            <input type="number" name="etapa" id="etapa" min="0">
+            </p>
+            <p>
+                <button type="button" onclick="calcular()" id="calcular">Calcular</button>
+            </p>
+            <div id="resposta">
+                Calculando resultado...
+            </div>
+            
+        </div>
+    </section>
+    <footer>
+        <p>&copy; br1zzu</B></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
