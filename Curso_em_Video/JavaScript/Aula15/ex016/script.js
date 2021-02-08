@@ -5,7 +5,7 @@ function calcular() {
     let res = document.getElementById('resposta');
      if (n1.value.length == 0 || n2.value.length == 0 || etapa.value.length == 0 ){
 
-     window.alert('teste')
+     window.alert('FALHA: Algum campo está vazio, preencha todos.')
    } else {
         res.innerHTML = `Contando: `
         let i = Number(n1.value)
