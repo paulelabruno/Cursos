@@ -5,13 +5,16 @@ function calcular() {
     let res = document.getElementById('resposta');
      if (n1.value.length == 0 || n2.value.length == 0 || etapa.value.length == 0 ){
 
-     window.alert('FALHA: Algum campo está vazio, preencha todos.')
+     //window.alert('FALHA: Algum campo está vazio, preencha todos.')
    } else {
-        res.innerHTML = `Contando: `
+        res.innerHTML = `Contando: <br>`
         let i = Number(n1.value)
         let f = Number(n2.value)
         let e = Number(etapa.value)
-        
+        if (e <= 0){
+            window.alert('Passo inválido! Considerando PASSO 1')
+            p = 1
+        }
         if (i < f){
             for (let r = i; r <= f; r += e ){
                 res.innerHTML += `${r} 👉 `  

@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="estilo.css" rel="stylesheet">
-    <title>Hora do Dia</title>
+    <title>Document</title>
 </head>
-<body onload="carregar()" id="corpo">
+<body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
-        <div id="msg">
-            Aqui vai aparecer a hora
+        <div>
+            <p class="cor">Número: <input type="number" id="numero" name="numero"></p>
         </div>
-        <div id="foto">
-            <img id="imagem" src="manha.png" alt="foto do dia">
+        <div>
+            <input type="button" id="botao" name="botao" value="Gerar"  onclick="validar()">
         </div>
+        <div id="tabuada"></div>
+        <table id="tabela">
+        </table>
     </section>
     <footer>
         <p>&copy; paulelabruno</B></p>
