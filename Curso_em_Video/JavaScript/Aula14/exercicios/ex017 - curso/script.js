@@ -15,5 +15,5 @@ function validar(){
             tab.appendChild(item)
             c++
         }
-    
+    }
 }
